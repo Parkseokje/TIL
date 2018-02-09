@@ -13,7 +13,7 @@ class Person {
   }
 }
 
-const me = new Person('Park);
+const me = new Person('Park');
 me.sayHi();
 
 console.log(me instanceof Person);
@@ -145,8 +145,8 @@ console.log(Korea instance of Animal); // true
 * super 키워드는 부모 클래스의 contructor 를 호출한다.
 * 자식 클래스에서 super()를 호출하지 않으면 참조 오류가 발생한다.
 * super()를 호출하기 이전에는 this 를 참조할 수 없다.
-* 자식 클래스의 일반 메소드에서는 super 를 사용하여 정적 메소드를 호출할 수 없다.
 * 부모 클래스의 정적 메소드도 상속된다.
+* 자식 클래스의 일반 메소드에서는 super 를 사용하여 정적 메소드를 호출할 수 없다.
 * 오버로딩(메소드 확장)은 지원하지 않으나 arguments 객체를 활용할 수는 있다.
 
 ## 기타
