@@ -12,6 +12,10 @@ _Flow is a static type checker for JavaScript. - [flow](https://flow.org/en/)_
 * 더 좋은 IDE 지원 허용
 * 잠재적인 에러의 사전 식별 가능
 
+## 특징
+* 리엑트에 빌트인되어 있다.
+* 점진적으로 적용할 수 있다.
+
 ## 설치
 
 ```
@@ -32,6 +36,40 @@ yarn (run) flow init
 ```
 
 현재 프로젝트의 flow-typed 폴더에서 확인할 수 있다.
+
+## styled-component 에 대한 예외처리
+루트에 **.flowconfig** 파일 생성
+
+```
+[ignore]
+<PROJECT_ROOT>/node_modules/styled-components/*
+
+[libs]
+styled-components
+```
+
+## Flow 적용
+적용하려는 jsx 파일 상단에
+```javascript
+// @flow
+```
+
+## eslint rule 수정
+**.eslintrc.json
+```json
+"extends": [
+  "plugin:flowtype/recommended"
+],
+"plugins": [
+  "flowtype"
+]
+```
+
+## 특정 라인에 대하여 Flow 오류를 무시하려면
+```javascript
+// $FlowFixeMe
+import styled from 'styled-components';
+```
 
 ## 실행
 
