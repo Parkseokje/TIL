@@ -9,11 +9,6 @@ docker pull ubuntu:latest
 
 ## 이미지 리스트업
 ```
-docker images
-```
-
-## 이미지 리스트업
-```
 docker images -a
 ```
 
