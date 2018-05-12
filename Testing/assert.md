@@ -57,7 +57,7 @@ vi test.js
  10 function countLines (cb) {
  11   fs.readFile('file.txt', 'utf8',  function (err, src) {
  12     if (err) cb(err)
- 13     else cb(null, src.trim().split('\n').length+100)
+ 13     else cb(null, src.split('\n').length+100) // // 오류 발생 예상 지점3
  14   })
  15 }
 
@@ -99,9 +99,29 @@ AssertionError [ERR_ASSERTION]: 103 == 3
   8 })
   ..
 
-  else cb(null, src.trim().split('\n').length+100) // 의도적으로 100을 더하였기 때문. + 100을 없애고 다시 실행해보자.
+  else cb(null, src.split('\n').length+100) // 의도적으로 100을 더하였기 때문. + 100을 없애고 다시 실행해보자.
 ```
 
+세 번째 오류 발생
+```
+assert.js:42
+  throw new errors.AssertionError({
+  ^
+
+AssertionError [ERR_ASSERTION]: 4 == 3
+```
+
+오류 발생 지점
+```
+$node
+> require('fs').readFileSync('file.txt', 'utf8')
+'1\n2\n3\n'
+
+// 문서 끝에 빈문자열을 제거한다.
+13     else cb(null, src.trim().split('\n').length)
+```
+
+수정 후 다시 실행.
 테스트 성공. 하지만 아무런 메세지가 없다.
 
 ```
@@ -111,7 +131,7 @@ $$echo $? // exit code. 0일 경우 성공. 1일 경우 실패
 ```
 
 ## assert의 문제점
-- exception 이 발생할 경우 실행을 멈춤.
+- exception 이 발생할 경우 실행을 멈춤. (13번째 줄 제거 후 성공으로 처리되는 문제)
 - 테스트 블록이 실행되지 않을 경우에도 성공한 것처럼 보여짐.
 
 
