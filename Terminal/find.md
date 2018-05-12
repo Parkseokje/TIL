@@ -8,6 +8,11 @@ find /var/log -type f -name *.log
 find /etc -type f -empty
 ```
 
+## log 라는 단어가 포함된 디렉토리 검색
+```
+find / -type d -name log
+```
+
 ## 마지막 명령을 sudo 권한으로 재실행하기
 ```
 sudo!!
