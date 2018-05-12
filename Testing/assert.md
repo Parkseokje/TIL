@@ -75,23 +75,23 @@ assert.js:42
 AssertionError [ERR_ASSERTION]: 3 == undefined
 ```
 
-첫 번째 오류 발생.
+### 첫 번째 오류 발생
 
 ```
 4 assert.equal(1+2) // equal에 두 번째 파라미터가 지정되지 않아 발생.
 4 assert.equal(1+2, 3) // 다음과 같이 수정 후 다시 실행
 ```
 
-두 번째 오류 발생.
+### 두 번째 오류 발생
 ```
 assert.js:42
   throw new errors.AssertionError({
   ^
 
-AssertionError [ERR_ASSERTION]: 103 == 3
+AssertionError [ERR_ASSERTION]: 104 == 3
 ```
 
-오류 발생 지점
+### 오류 발생 지점
 ```
   5 countLines(function (err, n) {
   6   assert.ifError(err)
@@ -102,7 +102,7 @@ AssertionError [ERR_ASSERTION]: 103 == 3
   else cb(null, src.split('\n').length+100) // 의도적으로 100을 더하였기 때문. + 100을 없애고 다시 실행해보자.
 ```
 
-세 번째 오류 발생
+### 세 번째 오류 발생
 ```
 assert.js:42
   throw new errors.AssertionError({
@@ -111,7 +111,7 @@ assert.js:42
 AssertionError [ERR_ASSERTION]: 4 == 3
 ```
 
-오류 발생 지점
+### 오류 발생 지점
 ```
 $node
 > require('fs').readFileSync('file.txt', 'utf8')
@@ -121,7 +121,7 @@ $node
 13     else cb(null, src.trim().split('\n').length)
 ```
 
-수정 후 다시 실행.
+### 수정 후 다시 실행
 테스트 성공. 하지만 아무런 메세지가 없다.
 
 ```
