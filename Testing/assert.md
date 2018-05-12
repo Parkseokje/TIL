@@ -115,7 +115,7 @@ AssertionError [ERR_ASSERTION]: 4 == 3
 ```
 $node
 > require('fs').readFileSync('file.txt', 'utf8')
-'1\n2\n3\n'
+'one\ntwo\nthree\n'
 
 // 문서 끝에 빈문자열을 제거한다.
 13     else cb(null, src.trim().split('\n').length)
