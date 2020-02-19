@@ -57,7 +57,16 @@
   확인할 수 있음
   - `Access-Control-Max-Age`: Preflight Request의 결과가 캐시에 얼마나 남아 있는지를 보여줌.
   - `Access-Control-Allow-Headers`: 예비 요청에 대한 Response Header에 사용되며, 본 요청에서 사용할 수 있는 HTTP Header를 지정.
-    - 사용 가능한 헤더 예시: Content-Type, Accept-Encoding, X-CSRF-Token, Authorization
- 
-[MDN - HTTP 접근제어(CORS)](https://developer.mozilla.org/ko/docs/Web/HTTP/CORS)
-[CORS](https://brownbears.tistory.com/336)
+    - 사용 가능한 헤더 예시: Content-Type, Accept-Encoding, X-CSRF-Token, Authorization 등
+
+### 길라잡이 
+- [MDN - HTTP 접근제어(CORS)](https://developer.mozilla.org/ko/docs/Web/HTTP/CORS)
+- [CORS](https://brownbears.tistory.com/336)
+
+<span id="anc2">PUT, PATCH, OPTIONS에 대해 간략히 설명해주세요.</span> [[목차](#questions)]
+
+- PUT: 자원의 전체 교체
+- PATCH: 자원의 부분 교체
+
+## 길라잡이
+- [스택오버플로우](https://stackoverflow.com/questions/28459418/rest-api-put-vs-patch-with-real-life-examples)
