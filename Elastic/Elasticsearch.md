@@ -16,7 +16,7 @@
     server.host: "0.0.0.0"
   ```
 
-## <span id="secure-elasticsearch">Secure Elasticsearch & Kibana</span>
+## <span id="secure">Secure Elasticsearch & Kibana</span>
 
   For Security, [here](https://www.elastic.co/kr/blog/getting-started-with-elasticsearch-security)
 

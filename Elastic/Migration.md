@@ -1,4 +1,4 @@
-# Migration
+# Migration from MongoDB to Elasticsearch
 
 _Created by Seokje Park at 2020.02.21_
 
@@ -121,7 +121,7 @@ When you apply Elasticsearch basic authentication later, you must make the follo
     elasticsearch-user = "elastic"
     elasticsearch-password = "{elasticsearch-setup-passwords generated elastic password}"
   ```
-  See more about elasticsearch security [Setting Elaticsearch and Kibana](./Elasticsearch#secure-elasticsearch).
+  See more about elasticsearch security [Setting Elaticsearch and Kibana](https://molla4455.gitbook.io/dev-log/elastic/elasticsearch#secure-elasticsearch-and-kibana).
 
 ## Reference site
 - [Tutorial: Sync mongoDB with Elasticsearch](https://medium.com/@eldishnawy/tutorial-sync-mongodb-with-elasticsearch-fb43e9bc13ce)
