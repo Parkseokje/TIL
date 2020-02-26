@@ -1,0 +1,89 @@
+prev_intent,intent,0
+alarm,bus,1
+alarm,sensor,1
+application,capacitor,1
+application,circuit,1
+application,driver,1
+application,feed,1
+application,monitor,1
+array,array,2
+array,circuit,1
+array,driver,1
+array,feed,1
+array,hard drive,2
+array,pixel,1
+array,system,1
+bandwidth,application,1
+bandwidth,card,1
+bandwidth,firewall,1
+bandwidth,pixel,1
+bandwidth,transmitter,1
+bus,application,1
+bus,card,1
+bus,feed,1
+capacitor,pixel,1
+card,array,1
+card,bandwidth,1
+card,hard drive,1
+circuit,feed,1
+circuit,transmitter,1
+driver,array,1
+driver,driver,1
+driver,monitor,1
+driver,protocol,1
+feed,application,1
+feed,feed,1
+feed,matrix,1
+feed,monitor,1
+feed,panel,1
+feed,protocol,1
+feed,sensor,1
+firewall,array,1
+firewall,pixel,1
+firewall,program,1
+firewall,sensor,1
+hard drive,feed,2
+hard drive,firewall,1
+hard drive,hard drive,1
+hard drive,matrix,1
+hard drive,microchip,1
+interface,bus,2
+interface,protocol,1
+matrix,feed,1
+matrix,firewall,2
+matrix,matrix,2
+matrix,panel,1
+matrix,pixel,1
+microchip,matrix,1
+monitor,array,1
+monitor,hard drive,1
+monitor,panel,1
+monitor,program,1
+monitor,system,1
+panel,application,1
+panel,hard drive,1
+panel,matrix,1
+pixel,alarm,1
+pixel,application,1
+pixel,bandwidth,1
+pixel,sensor,1
+pixel,system,1
+port,bandwidth,1
+port,monitor,1
+program,interface,1
+program,port,1
+program,sensor,1
+program,transmitter,1
+protocol,array,1
+protocol,interface,2
+sensor,array,1
+sensor,bandwidth,1
+sensor,driver,1
+sensor,monitor,1
+sensor,protocol,1
+system,alarm,1
+system,array,1
+system,bandwidth,1
+transmitter,firewall,1
+transmitter,matrix,1
+transmitter,program,1
