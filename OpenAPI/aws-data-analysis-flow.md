@@ -18,7 +18,7 @@
 
      - Pros: Avoid cost of Lambda and S3 request.
      - Cons: 
-     - [Get Started](./build-event-pipeline-kinesis.md)
+     - [Get Started](https://molla4455.gitbook.io/dev-log/openapi/build-event-pipeline-kinesis-with-swagger)
 
 2. Store
 
