@@ -4,11 +4,25 @@
 
 In my case, installed `go1.14.darwin-amd64.pkg`
 
+## Sample code
+
+`hello.go`
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  fmt.println("hello, world")
+}
+```
+
 ## Test your Installation
 
 ```bash
-$ go build hello.go
-$ ./hello
+$ go build hello.go # build
+$ ./hello # run
 
 # hello, world
 ```
