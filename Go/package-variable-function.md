@@ -1,4 +1,4 @@
-# Basics > Packages, variables and functions
+# Packages, variables and functions
 
 ## Download
 
