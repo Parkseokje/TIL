@@ -7,9 +7,9 @@
 - Create IAM Role from `API Gateway` type
 - Attach `AmazonKinesisFullAccess` policy
 - Copy the Role ARN from the role summary page and save it for future use.
-- From API Gateway f
-
-
+- From API Gateway follow this [instructions](https://docs.aws.amazon.com/apigateway/latest/developerguide/integrating-api-with-aws-services-kinesis.html)
+- Deploy API Gateway. [more](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/how-to-deploy-api-with-console.html)
+- Test API Gateway. [more](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/api-gateway-export-api.html)
 
 ## To get more insights
 
