@@ -87,9 +87,12 @@ $ rm `which deno`
 
 https://github.com/denoland/vscode_deno
 
+
+You can also find more examples from my repo:
+https://github.com/Parkseokje/deno-playground
+
 ## Reference site
 
 - [Deno Official site](https://deno.land/)
 - [Deno Crash Course](https://morioh.com/p/05cffb094fa3?fbclid=IwAR2PMP66qOT4NfAPSzG-3YS7IRoQ4kulguBZ-nh4YasMAkmZMxHx-cfuYxw)
-- []()
-- []()
+- [Deno Deep Dive](https://velog.io/@rjs1197/deno-A-secure-runtime-for-JavaScript-and-TypeScript-%EB%A5%BC-%EC%82%B4%ED%8E%B4%EB%B3%B4%EC%9E%902019)
