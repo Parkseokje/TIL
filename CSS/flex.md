@@ -40,7 +40,6 @@ Flex 의 기본 사용법에 대해 설명한다.
 
 - 기본값은 row.
 - row 일 경우 main-axis 는 수평 cross-axis 는 수직이다.
-- row 일 경우 main-axis 는 수평 cross-axis 는 수직이다.
 - column 일 경우 main, cross axis 는 각각 반대 방향으로 적용.
 
 ## justify-content 속성
